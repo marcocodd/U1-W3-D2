@@ -70,9 +70,28 @@ console.log(ArrayMap);
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+const ArrayString = ["Ciao", "come", "stai"];
+
+const NumberString = ArrayString.map((nString) => {
+  return nString.length;
+});
+console.log(NumberString);
+
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+const ArrayDispari = [];
+
+const PushDispari = function () {
+  for (let i = 0; i <= 99; i++) {
+    if (i % 2 !== 0) {
+      ArrayDispari.push(i);
+    }
+  }
+};
+
+PushDispari();
+console.log(ArrayDispari);
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
